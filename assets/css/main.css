@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #56548f;
+  background-image: url(../imgs/galaxy.jpg), url(../imgs/4000x6000.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* 1023px */
+/* 740px */
+/* 739px */
+.container {
+  width: 100rem;
+  margin: 4.6rem auto;
+}
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 46.1875em) {
+  .container {
+    width: 100%;
+  }
+}
+.container header {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+.container header h1 {
+  font-size: 4rem;
+}
+.container header p {
+  padding: 1rem 0;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+.container main {
+  /* The container must be positioned relative: */
+  /* Style the arrow inside the select element: */
+  /* Point the arrow upwards when the select box is open (active): */
+  /* style the items (options), including the selected item: */
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */
+}
+.container main .form-input {
+  width: 75%;
+  margin: 2rem auto;
+  padding: 3rem 2rem;
+  color: white;
+  background-color: #162e38;
+  border-radius: 1rem;
+}
+.container main input[type=text] {
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: none;
+}
+.container main input[type=text]:focus {
+  outline: 3px groove #50a39c;
+}
+.container main .custom-select {
+  position: relative;
+  font-family: Arial;
+}
+.container main .custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+.container main .select-selected {
+  background-color: DodgerBlue;
+}
+.container main .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+.container main .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+.container main .select-items div,
+.container main .select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+.container main .select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.container main .select-hide {
+  display: none;
+}
+.container main .select-items div:hover,
+.container main .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.container main select {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  border: none;
+}
+.container main select:focus {
+  outline: 3px groove #50a39c;
+}
+.container main select option {
+  height: 20rem;
+}
+.container main label {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.container main .favor-feature {
+  margin: 0.5rem auto;
+}
+.container main input[type=radio]:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+.container main .recommend-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container main input[type=radio] {
+  margin: 0 0.5rem;
+}
+.container main input[type=radio]:checked:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #22e0d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+.container main .recommend {
+  margin-bottom: 1rem;
+}
+.container main #describes {
+  width: 100%;
+}
+.container main .recommend,
+.container main .favor-feature,
+.container main .improve,
+.container main .label-suggest {
+  display: block;
+}
+.container main #favor_feature,
+.container main .suggestion {
+  width: 100%;
+}
+.container main .appliments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container main .appliments label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.container main input[type=checkbox] {
+  width: 2.5rem;
+  height: 2.5rem;
+  accent-color: #22e0d1;
+}
+.container main textarea {
+  padding: 2rem;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+.container main textarea:focus {
+  outline: 3px groove #50a39c;
+}
+.container main .submit-btn {
+  width: 100%;
+  margin: 2rem auto 0;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #50a39c;
+  color: white;
+  border-radius: 10px;
+}
+.container main .submit-btn:hover {
+  cursor: pointer;
+}

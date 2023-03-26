@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <!-- custom -->
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+      </header>
+      <main>
+        <form id="form" class="form-input">
+          <label>Name</label>
+          <input type="text" placeholder="Enter your name" required />
+          <label>Email</label>
+          <input type="text" placeholder="Enter your email" required />
+          <label>Age (optional)</label>
+          <input type="text" placeholder="Age" />
+
+          <label>Which option best describes your current role?</label>
+          <select id="describes" class="custom-select">
+            <option value="Student">Student</option>
+            <option value="Fulltime Job">Fulltime Job</option>
+            <option value="Fulltime Learner">Fulltime Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label class="recommend">Would you recommend us to a friend?</label>
+          <section class="recommend-wrapper">
+            <label for="Definitely">
+              <input type="radio" name="recommend" id="Definitely" checked />
+              Definitely
+            </label>
+            <label for="Maybe">
+              <input type="radio" name="recommend" id="Maybe" /> Maybe
+            </label>
+            <label for="Not sure">
+              <input type="radio" name="recommend" id="Not sure" /> Not sure
+            </label>
+          </section>
+
+          <label class="favor-feature">What is your favorite feature?</label>
+          <select id="favor_feature" class="custom-select">
+            <option value="Challenges">Challenges</option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Open Source">Open Source</option>
+          </select>
+
+          <label class="improve"
+            >What would you like to see improved? (Check all that apply)</label
+          >
+          <section class="appliments">
+            <label>
+              <input type="checkbox" name="checkbox" id="fe" checked />
+              Front-end Projects
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox" id="be" /> Back-end
+              Projects
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox" id="dv" /> Data
+              Visualization
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox" id="ch" checked />
+              Challenges
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox" id="osc" /> Open Source
+              Community
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox" id="gh" /> Gitter help
+              rooms
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox" id="vd" /> Videos
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox" id="cm" checked /> City
+              Meetups
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox" id="wk" /> Wiki
+            </label>
+            <label>
+              <input type="checkbox" nam class="custom-select"e="checkbox" id="fr" /> Forum
+            </label>
+          </section>
+
+          <label class="label-suggest">Any comments or suggestions?</label>
+          <textarea
+            class="suggestion"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment here..."
+            style="resize: vertical"
+          ></textarea>
+          <button class="submit-btn">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
