@@ -290,7 +290,7 @@ $mobile-width: 46.1875em; /* 739px */
 
     .submit-btn {
       width: 100%;
-      margin: 2rem auto 0;
+      margin: 2rem auto 2rem;
       padding: 2rem 0;
 
       text-align: center;
@@ -301,6 +301,23 @@ $mobile-width: 46.1875em; /* 739px */
       border-radius: 10px;
       &:hover {
         cursor: pointer;
+      }
+    }
+
+    p {
+      text-align: right;
+    }
+
+    a {
+      padding-left: 1rem;
+
+      font-style: italic;
+      text-decoration: none;
+      font-size: 3rem;
+      color: #50a39c;
+
+      &:hover {
+        color: white;
       }
     }
   }

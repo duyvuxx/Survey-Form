@@ -245,7 +245,7 @@ body {
 }
 .container main .submit-btn {
   width: 100%;
-  margin: 2rem auto 0;
+  margin: 2rem auto 2rem;
   padding: 2rem 0;
   text-align: center;
   font-size: 2rem;
@@ -255,4 +255,17 @@ body {
 }
 .container main .submit-btn:hover {
   cursor: pointer;
+}
+.container main p {
+  text-align: right;
+}
+.container main a {
+  padding-left: 1rem;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 3rem;
+  color: #50a39c;
+}
+.container main a:hover {
+  color: white;
 }
